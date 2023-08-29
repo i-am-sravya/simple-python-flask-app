@@ -8,3 +8,4 @@ docker pull sravya037/simple-python-flask-app:latest
 docker run -d -p 4000:4000 sravya037/simple-python-flask-app
 
 
+
