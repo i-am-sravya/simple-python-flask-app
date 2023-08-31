@@ -6,7 +6,15 @@ hooks:
     - location: scripts/stop_container.sh
       timeout: 300
       runas: root
+      permissions:
+        - object: scripts/stop_container.sh
+          pattern: \.sh$
+          mode: +x
   AfterInstall:
     - location: scripts/start_container.sh
       timeout: 300
       runas: root
+      permissions:
+        - object: scripts/start_container.sh
+          pattern: \.sh$
+          mode: +x
